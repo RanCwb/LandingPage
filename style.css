@@ -1,0 +1,187 @@
+/*general*/
+
+*{
+margin: 0;
+padding: 0;
+font-family: arial;
+box-sizing: border-box;
+}
+/*container*/
+
+
+#main-container{
+
+display: flex;
+flex-direction: row;
+height: 100vw;
+
+}
+#address-container, #form-container{
+
+
+flex: 1 1 0;
+height: 100%;
+text-align: center;
+
+}
+/*address container*/
+
+#address-container{
+
+background-image: url(img/project_bg.jpg);
+background-size: cover;
+background-position-x:  -230px;
+color: white;
+position: relative;
+}
+
+.fade{
+width: 100%;
+height: 100%;
+background: black;
+opacity: .6;
+}
+
+#address-content{
+
+position: absolute;
+top:20vh ;
+left: 35%;
+width: 100%;
+}
+#address-content h2 {
+
+
+
+color :#008B8B	;
+margin-bottom: 20px;
+padding-left: 10px;
+
+}
+#address-content {
+margin-top: 30%;
+top: 2px;
+left: 0;
+text-align:  center;
+padding: 20px;
+}
+
+
+    
+#address-content p{
+
+font-weight: bold;
+margin-bottom: 50px;
+
+}
+
+/*form*/
+
+#form-container{
+padding-top: 60px;
+text-align: center;
+}
+#form-container h2{
+margin-bottom: 50px;
+
+}
+#contat-form{
+border-radius: 20px;
+width: 500px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+#contat-form input,
+#contat-form label,
+#contat-form textarea{
+
+
+display: block;
+padding: 10px;
+border: 1px solid #DCDCDC			 ;
+width: 100%;
+color:grey;
+}
+#contat-form label{
+
+text-align: left;
+
+}
+
+#contat-form{
+
+
+color: #999;
+font-weight:bold;
+
+
+}
+#contat-form input{
+margin-bottom: 80px;
+}
+
+#contat-form input::placeholder
+#contat-form textarea::placeholder{
+
+color: #ccc;
+}
+
+#contat-form input[type=submit]{
+
+background-color:#1E90FF	 ;
+color: white;
+font-weight: bold;
+cursor: pointer;
+width: 300px;
+margin: 30px auto;
+border-radius: 10px;
+}
+#contat-form input[type=submit]:hover{
+
+    background-color: white;
+    color: #1E90FF	;
+    border-color: #1E90FF	;
+    
+
+}
+
+/*responsivo*/
+
+@media(max-width:450px){
+
+#main-container{
+height: 100%;
+flex-wrap: wrap;
+}
+
+
+
+#form-container{
+
+order: -1;
+padding: 20px;
+
+
+}
+#form-container h2{
+
+margin-bottom: 20px;
+
+
+}
+
+
+#address-container{
+background-position: 3;
+
+}
+#address-contat{
+
+top: 50%;
+left: 50%;
+}
+
+
+}
