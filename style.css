@@ -8,6 +8,10 @@ box-sizing: border-box;
 }
 /*container*/
 
+body{
+
+    background-color:#FFFFE0	;
+}
 
 #main-container{
 
@@ -28,7 +32,7 @@ text-align: center;
 
 #address-container{
 
-background-image: url(img/project_bg.jpg);
+background-image: url(img/dell-LXI5kqCdEcE-unsplash.jpg);
 background-size: cover;
 background-position-x:  -230px;
 color: white;
@@ -100,32 +104,35 @@ margin-right: auto;
 
 display: block;
 padding: 10px;
-border: 1px solid #DCDCDC			 ;
+border: 1px solid black		 ;
 width: 100%;
-color:grey;
+color:black;
 }
 #contat-form label{
 
 text-align: left;
+border-radius: 20px;
 
 }
 
 #contat-form{
 
 
-color: #999;
+color: black;
 font-weight:bold;
+border-radius: 20px;
 
 
 }
 #contat-form input{
 margin-bottom: 80px;
+border-radius: 20px;
 }
 
 #contat-form input::placeholder
 #contat-form textarea::placeholder{
 
-color: #ccc;
+color: black;
 }
 
 #contat-form input[type=submit]{
@@ -146,7 +153,11 @@ border-radius: 10px;
     
 
 }
+.txtp{
 
+border-radius: 20px;
+
+}
 /*responsivo*/
 
 @media(max-width:450px){
